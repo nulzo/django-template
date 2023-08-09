@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta about="" />
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+        <title>{% block title %}{% endblock title %}</title>
+    </head>
+    <body>
+        <main>
+            <div class="window">
+                <div class="row">
+                    <div class="navbar-window">{% include "includes/navbar.html" %}</div>
+                </div>
+                <div class="row">
+                    <div class="main-window">
+                        {% if messages %}{% include "includes/message-box.html" %}{% endif %}
+                        {% block header %}{% endblock header %}
+                        {% block content %}{% endblock content %}
+                    </div>
+                </div>
+            </div>
+            <div class="footer-window">{% include "includes/footer.html" %}</div>
+        </main>
+    </body>
+</html>

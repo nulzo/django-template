@@ -1,0 +1,31 @@
+# Django #
+*.log
+*.pot
+*.pyc
+__pycache__
+db.sqlite3
+media
+
+# Jetbrains shit
+.idea
+idea
+
+# Project stuff
+.env
+env/
+.venv
+venv/
+VENV/
+ENV/
+
+# Misc stuff
+build/
+settings.json
+.python-version
+.mypy_cache/
+.coverage 
+.coverage.* 
+.tox/ 
+.pytest_cache/ 
+coverage.xml 
+.ruff
